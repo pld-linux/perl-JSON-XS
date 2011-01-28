@@ -17,15 +17,16 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-authors/id/M/ML/MLEHMANN/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	a9573011cb830213a6615ab2e6a64dbc
 URL:		http://search.cpan.org/dist/JSON-XS/
-BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	perl-Encode
+BuildRequires:	perl-common-sense
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This module converts Perl data structures to JSON and vice versa. Its
-primary goal is to be correct and its secondary goal is to be
-fast. To reach the latter goal it was written in C.
+primary goal is to be correct and its secondary goal is to be fast. To
+reach the latter goal it was written in C.
 
 As this is the n-th-something JSON module on CPAN, what was the reason
 to write yet another JSON module? While it seems there are many JSON
