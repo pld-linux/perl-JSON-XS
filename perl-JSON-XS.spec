@@ -8,14 +8,14 @@
 Summary:	JSON::XS - JSON serialising/deserialising, done correctly and fast
 Summary(pl.UTF-8):	JSON::JS - serializacja/deserializacja JSON wykonana poprawnie i szybko
 Name:		perl-JSON-XS
-Version:	2.29
-Release:	4
-Epoch:		1
+Version:	2.3
+Release:	1
+Epoch:		2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-authors/id/M/ML/MLEHMANN/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	a9573011cb830213a6615ab2e6a64dbc
+# Source0-md5:	4dc2a968e41f8cf330d46be12f221a12
 URL:		http://search.cpan.org/dist/JSON-XS/
 BuildRequires:	perl-Encode
 BuildRequires:	perl-common-sense
