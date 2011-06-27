@@ -73,11 +73,12 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%attr(755,root,root) %{_bindir}/*
-%{perl_vendorarch}/JSON/*.pm
+%attr(755,root,root) %{_bindir}/json_xs
+%{perl_vendorarch}/JSON/XS.pm
 %{perl_vendorarch}/JSON/XS
 %dir %{perl_vendorarch}/auto/JSON
 %dir %{perl_vendorarch}/auto/JSON/XS
+%{perl_vendorarch}/auto/JSON/XS/XS.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/JSON/XS/*.so
 %{_mandir}/man?/*
 %{_examplesdir}/%{name}-%{version}
