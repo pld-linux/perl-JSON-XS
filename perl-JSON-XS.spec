@@ -9,7 +9,7 @@ Summary:	JSON::XS - JSON serialising/deserialising, done correctly and fast
 Summary(pl.UTF-8):	JSON::JS - serializacja/deserializacja JSON wykonana poprawnie i szybko
 Name:		perl-JSON-XS
 Version:	2.3
-Release:	1
+Release:	2
 Epoch:		2
 # same as perl
 License:	GPL v1+ or Artistic
