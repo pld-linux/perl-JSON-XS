@@ -78,7 +78,6 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorarch}/JSON/XS
 %dir %{perl_vendorarch}/auto/JSON
 %dir %{perl_vendorarch}/auto/JSON/XS
-%{perl_vendorarch}/auto/JSON/XS/XS.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/JSON/XS/*.so
 %{_mandir}/man?/*
 %{_examplesdir}/%{name}-%{version}
