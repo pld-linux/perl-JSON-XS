@@ -1,21 +1,21 @@
 #
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define	pdir	JSON
 %define	pnam	XS
+%include	/usr/lib/rpm/macros.perl
 Summary:	JSON::XS - JSON serialising/deserialising, done correctly and fast
 Summary(pl.UTF-8):	JSON::JS - serializacja/deserializacja JSON wykonana poprawnie i szybko
 Name:		perl-JSON-XS
-Version:	3.01
-Release:	3
+Version:	3.02
+Release:	1
 Epoch:		2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-authors/id/M/ML/MLEHMANN/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	b7be65295baf6dd9233c6494782c1153
+# Source0-md5:	0d4078f18003b50be970709a77b6afbf
 URL:		http://search.cpan.org/dist/JSON-XS/
 BuildRequires:	perl-Encode
 BuildRequires:	perl-Types-Serialiser
