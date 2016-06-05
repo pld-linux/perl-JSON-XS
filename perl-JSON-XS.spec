@@ -17,11 +17,14 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-authors/id/M/ML/MLEHMANN/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	0d4078f18003b50be970709a77b6afbf
 URL:		http://search.cpan.org/dist/JSON-XS/
+BuildRequires:	perl-Canary-Stability
+BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
+%if %{with tests}
 BuildRequires:	perl-Encode
 BuildRequires:	perl-Types-Serialiser
 BuildRequires:	perl-common-sense
-BuildRequires:	perl-devel >= 1:5.8.0
-BuildRequires:	rpm-perlprov >= 4.1-13
+%endif
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -51,6 +54,7 @@ zgłoszenia błędów.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
+export PERL_CANARY_STABILITY_NOPROMPT=1
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make} \
@@ -61,12 +65,11 @@ zgłoszenia błędów.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
 install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
-cp -a eg $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+cp -a eg/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -80,5 +83,7 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{perl_vendorarch}/auto/JSON
 %dir %{perl_vendorarch}/auto/JSON/XS
 %attr(755,root,root) %{perl_vendorarch}/auto/JSON/XS/*.so
-%{_mandir}/man?/*
+%{_mandir}/man1/json_xs.1p*
+%{_mandir}/man3/JSON::XS.3pm*
+%{_mandir}/man3/JSON::XS::Boolean.3pm*
 %{_examplesdir}/%{name}-%{version}
