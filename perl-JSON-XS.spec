@@ -6,16 +6,16 @@
 %define	pnam	XS
 %include	/usr/lib/rpm/macros.perl
 Summary:	JSON::XS - JSON serialising/deserialising, done correctly and fast
-Summary(pl.UTF-8):	JSON::JS - serializacja/deserializacja JSON wykonana poprawnie i szybko
+Summary(pl.UTF-8):	JSON::XS - serializacja/deserializacja JSON wykonana poprawnie i szybko
 Name:		perl-JSON-XS
-Version:	3.02
-Release:	4
+Version:	3.04
+Release:	1
 Epoch:		2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-authors/id/M/ML/MLEHMANN/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	0d4078f18003b50be970709a77b6afbf
+# Source0-md5:	29e15165813fb240f6972bc19b4711dc
 URL:		http://search.cpan.org/dist/JSON-XS/
 BuildRequires:	perl-Canary-Stability
 BuildRequires:	perl-devel >= 1:5.8.0
