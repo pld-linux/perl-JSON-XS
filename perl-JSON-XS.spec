@@ -4,7 +4,6 @@
 
 %define	pdir	JSON
 %define	pnam	XS
-%include	/usr/lib/rpm/macros.perl
 Summary:	JSON::XS - JSON serialising/deserialising, done correctly and fast
 Summary(pl.UTF-8):	JSON::XS - serializacja/deserializacja JSON wykonana poprawnie i szybko
 Name:		perl-JSON-XS
