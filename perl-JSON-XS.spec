@@ -13,12 +13,14 @@ Epoch:		2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-authors/id/M/ML/MLEHMANN/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/JSON/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	5358225ebc9f5b74516d7585ac236086
-URL:		http://search.cpan.org/dist/JSON-XS/
+URL:		https://metacpan.org/release/JSON-XS
 BuildRequires:	perl-Canary-Stability
-BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	perl-ExtUtils-MakeMaker >= 6.52
+BuildRequires:	perl-devel >= 1:5.8.3
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	rpmbuild(macros) >= 1.745
 %if %{with tests}
 BuildRequires:	perl-Encode
 BuildRequires:	perl-Types-Serialiser
