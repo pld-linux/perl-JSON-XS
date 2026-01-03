@@ -7,14 +7,14 @@
 Summary:	JSON::XS - JSON serialising/deserialising, done correctly and fast
 Summary(pl.UTF-8):	JSON::XS - serializacja/deserializacja JSON wykonana poprawnie i szybko
 Name:		perl-JSON-XS
-Version:	4.03
-Release:	6
+Version:	4.04
+Release:	1
 Epoch:		2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/JSON/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	5358225ebc9f5b74516d7585ac236086
+Source0:	https://www.cpan.org/modules/by-module/JSON/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	b501fc6cb77a45b530ca1948800956c1
 URL:		https://metacpan.org/release/JSON-XS
 BuildRequires:	perl-Canary-Stability
 BuildRequires:	perl-ExtUtils-MakeMaker >= 6.52
